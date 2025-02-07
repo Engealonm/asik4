@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <%= user.username %>!</h2>
+    <img src="<%= user.profilePicture %>" alt="Profile Picture" style="width: 100px; height: 100px;">
+    <p>Email: <%= user.email %></p>
+    <a href="/profile" class="edit-profile">Edit Profile</a>
+    <div class="spacer"></div>
+    <a href="/logout" class="logout">Logout</a>
+  </div>
+</body>
+</html>
