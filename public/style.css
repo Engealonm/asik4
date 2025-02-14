@@ -1,8 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
   text-align: center;
   margin-top: 50px;
+  color: #333;
 }
 
 .container {
@@ -10,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  padding: 20px;
 }
 
 .spacer {
@@ -18,31 +20,40 @@ body {
 
 form input {
   display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 201px;
+  margin: 15px auto;
+  padding: 12px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   width: 220px;
-  margin: 5px 0; 
+  margin: 10px 0;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"] {
-  background-color: #28a745; 
-  color: white;
+  background-color: #ffcc00;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button[type="submit"]:hover {
-  background-color: #218838; 
+  background-color: #e6b300;
 }
 
 button.update {
   background-color: #007bff;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button.update:hover {
@@ -50,8 +61,9 @@ button.update:hover {
 }
 
 button.delete {
-  background-color: #ff0000;
+  background-color: #dc3545;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button.delete:hover {
@@ -59,14 +71,14 @@ button.delete:hover {
 }
 
 button.back {
-  background-color: #333333;
+  background-color: #6c757d;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button.back:hover {
-  background-color: #555;
+  background-color: #5a6268;
 }
-
 
 .button-group {
   display: flex;
@@ -75,17 +87,18 @@ button.back:hover {
 }
 
 a {
-  color: blue;
+  color: #007bff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: none;
+  color: #0056b3;
 }
-
 
 .logout {
   margin-bottom: 20px;
   margin: 10px;
-  color: red;
+  color: #dc3545;
+  font-weight: bold;
 }
